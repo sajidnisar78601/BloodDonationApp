@@ -1,0 +1,14 @@
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\bin\Debug\netstandard2.0\UserProfileXamarinForms.deps.json
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\bin\Debug\netstandard2.0\UserProfileXamarinForms.dll
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\bin\Debug\netstandard2.0\UserProfileXamarinForms.pdb
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\obj\Debug\netstandard2.0\UserProfileXamarinForms.csproj.AssemblyReference.cache
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\obj\Debug\netstandard2.0\Theme\DarkTheme.xaml.g.cs
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\obj\Debug\netstandard2.0\Theme\LightTheme.xaml.g.cs
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\obj\Debug\netstandard2.0\UserProfileXamarinForms.AssemblyInfoInputs.cache
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\obj\Debug\netstandard2.0\UserProfileXamarinForms.AssemblyInfo.cs
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\obj\Debug\netstandard2.0\UserProfileXamarinForms.csproj.CoreCompileInputs.cache
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\obj\Debug\netstandard2.0\XamlC.stamp
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\obj\Debug\netstandard2.0\UserProfileXamarinForms.dll
+E:\XF\UserProfile\UserProfileXamarinForms\UserProfileXamarinForms\obj\Debug\netstandard2.0\UserProfileXamarinForms.pdb

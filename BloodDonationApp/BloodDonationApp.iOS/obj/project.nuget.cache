@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "zYnapojOEtWypubZ/ewFTCQ6g/r1akJ+hVwm2q5Q6uE18/0pOrjpIBrbxDAIZ6niSJrcuYlmn1bMnMkXTQzjhQ==",
+  "success": true,
+  "projectFilePath": "E:\\XF\\BloodDonationApp\\BloodDonationApp\\BloodDonationApp.iOS\\BloodDonationApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ACER\\.nuget\\packages\\carouselview.formsplugin\\6.0.0\\carouselview.formsplugin.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\webp.touch\\1.0.8\\webp.touch.1.0.8.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\xamarin.essentials\\1.1.0\\xamarin.essentials.1.1.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\xamarin.forms.pancakeview\\1.2.1\\xamarin.forms.pancakeview.1.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}
