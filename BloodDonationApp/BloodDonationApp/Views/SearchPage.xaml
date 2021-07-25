@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pancakeView="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="BloodDonationApp.Views.SearchPage" 
+             Title="DONORS">
+    <StackLayout>
+        <SearchBar></SearchBar>
+        <ScrollView Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid RowSpacing="30" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="1" RowSpacing="20" Margin="30,0,0,30" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Text="DONORS" TextColor="Black" FontSize="20" FontFamily="{StaticResource BoldFont}"/>
+                    <!--<Label Text="Show all" TextColor="Black" FontSize="14" VerticalOptions="Center" Opacity="0.5" HorizontalOptions="End" Margin="0,0,30,0"/>-->
+                    <ScrollView Orientation="Vertical" Grid.Row="1" VerticalOptions="Start" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding Donors}" Spacing="15" VerticalOptions="Start" >
+                            <BindableLayout.ItemTemplate >
+                                <DataTemplate >
+                                    <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Start" WidthRequest="220" >
+                                        <Frame Padding="0" HasShadow="False" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="120" WidthRequest="150">
+                                            <!--<Image Source="{Binding Image}" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>-->
+                                            <pancakeView:PancakeView
+                            BorderColor="{DynamicResource PrimaryColor}"
+                            BorderThickness="2"
+                            CornerRadius="51"
+                            HeightRequest="36"
+                            WidthRequest="36">
+                                                <Image Source="profile_small"/>
+                                            </pancakeView:PancakeView>
+                                        </Frame>
+                                        <StackLayout Margin="0,12,0,0">
+                                            <Label Text="{Binding Name}" TextColor="Black" FontSize="15" FontAttributes="Bold" />
+                                            <Label Text="{Binding Age}" Margin="0,-7,0,0" TextColor="#62153B" FontSize="12" FontFamily="{StaticResource BoldFont}"/>
+                                            <Label Text="{Binding Area.Name}" Margin="0,-7,0,0" TextColor="#62153B" FontSize="12" FontFamily="{StaticResource BoldFont}"/>
+                                            <Label Text="{Binding BloodGroup.Name}" Margin="0,-7,0,0" TextColor="Red" FontSize="12" FontFamily="{StaticResource BoldFont}"/>
+                                            <StackLayout Orientation="Horizontal" Margin="0,1,0,0">
+                                                <ImageButton Source="fav.png" Aspect="Fill" 
+                                                             VerticalOptions="Center" 
+                                                             WidthRequest="25" 
+                                                             HeightRequest="25"
+                                                             Clicked="FavouriteButton_Clicked"/>
+                                                <!--<Label Text="ADD TO FAVOURITES" TextColor="Black" FontSize="10" Opacity="0.6" VerticalOptions="Center"/>-->
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

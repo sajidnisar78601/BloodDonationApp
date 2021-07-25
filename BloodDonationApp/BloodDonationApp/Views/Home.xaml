@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BloodDonationApp.Views.Home" Title="HOME">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--<StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="End" Margin="30,20">
+            <ImageButton Source="fav.png" Aspect="AspectFit" HeightRequest="32" WidthRequest="30" VerticalOptions="Center"/>
+            <ImageButton Source="cartFilled.png" Aspect="AspectFit" HeightRequest="32" WidthRequest="30" VerticalOptions="Center"/>
+        </StackLayout>-->
+        <ScrollView Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid RowSpacing="30" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid RowSpacing="20" Margin="30,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Text="BLOOD GROUPS" TextColor="Black" FontSize="20" FontFamily="{StaticResource BoldFont}"/>
+                    <!--<Label Text="Show all" 
+                            TextColor="Black" 
+                            FontSize="14" VerticalOptions="Center" Opacity="0.5" HorizontalOptions="End" 
+                            Margin="0,0,30,0"/>-->
+
+                    <ScrollView Orientation="Horizontal" Grid.Row="1" VerticalOptions="Start" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+                        <StackLayout BindableLayout.ItemsSource="{Binding BloodGroups}" Orientation="Horizontal" Spacing="20" VerticalOptions="Start">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout VerticalOptions="Start">
+                                        <!--<Frame IsVisible="False" Padding="0" HasShadow="False"  HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="150" WidthRequest="150">
+                                            <Image Source="{Binding Image}" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                                        </Frame>-->
+                                        <Button Text="{Binding Name}"
+                                                TextColor="White"
+                                                BackgroundColor="Red"
+                                                BorderWidth="5"
+                                                CornerRadius="15"
+                                                Clicked="Button_Clicked"
+                                                ></Button>
+                                        <!--<Label Text="{Binding Name}" TextColor="Black" FontSize="15" />
+                                        <Label Text="{Binding Price}" Margin="0,-7,0,0" TextColor="#62153B" FontSize="12" FontFamily="{StaticResource BoldFont}"/>-->
+                                    </StackLayout>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+                <Grid Grid.Row="1" RowSpacing="20" Margin="30,0,0,30" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Text="AREAS" TextColor="Black" FontSize="20" FontFamily="{StaticResource BoldFont}"/>
+                    <!--<Label Text="Show all" TextColor="Black" FontSize="14" VerticalOptions="Center" Opacity="0.5" HorizontalOptions="End" Margin="0,0,30,0"/>-->
+                    <ScrollView Orientation="Vertical" Grid.Row="1" VerticalOptions="Start" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding AreaList}" Spacing="15" VerticalOptions="Start">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Start" WidthRequest="220">
+                                        <!--<Frame Padding="0" HasShadow="False" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="90" WidthRequest="190">
+                                            <Image Source="{Binding Image}" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                                        </Frame>-->
+                                        
+                                        <StackLayout Margin="0,0,25,0" HorizontalOptions="FillAndExpand"
+                                                     >
+                                            <Button Text="{Binding Name}" TextColor="White" BackgroundColor="Red"
+                                                    FontSize="25" HorizontalOptions="FillAndExpand"
+                                                    FontFamily="{StaticResource BoldFont}"
+                                                    BorderWidth="5"
+                                                    CornerRadius="15"
+                                                    Clicked="Area_Clicked"/>
+                                            <!--<Label Text="{Binding Price}" Margin="0,-7,0,0" TextColor="#62153B" FontSize="12" FontFamily="{StaticResource BoldFont}"/>-->
+                                            <!--<StackLayout Orientation="Horizontal" Margin="0,15,0,0">
+                                                <Image Source="add.png" Aspect="Fill" VerticalOptions="Center" WidthRequest="15" HeightRequest="15"/>
+                                                <Label Text="ADD TO CART" TextColor="Black" FontSize="10" Opacity="0.6" VerticalOptions="Center"/>
+                                            </StackLayout>-->
+                                        </StackLayout>
+                                        
+                                    </StackLayout>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>
